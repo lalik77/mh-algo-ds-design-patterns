@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.mami</groupId>
-  <artifactId>mh-algo-ds-desig-paterns</artifactId>
+  <artifactId>mh-algo-ds-design-paterns</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>mh-algo-ds-desig-paterns</name>
