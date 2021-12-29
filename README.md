@@ -1,9 +1,10 @@
 # Design Patterns 
 
-## Repo will contain 2 branches 
+## This repository will contain 2 branches 
 
 branch1
  - Memento Pattern
+ - State   Pattern
 
 
 
