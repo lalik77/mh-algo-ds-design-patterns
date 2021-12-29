@@ -2,7 +2,8 @@ package com.mami;
 
 import com.mami.dp.adapter.CaramelAdapter;
 import com.mami.dp.adapter.Image;
-import com.mami.dp.adapter.ImageViewer;
+import com.mami.dp.adapter.ImageView;
+import com.mami.dp.adapter.VividFilter;
 import com.mami.dp.adapter.ava.Caramel;
 
 /**
@@ -13,17 +14,14 @@ public class AppAdapter
 {
     public static void main( String[] args )
     {
-        Image image1 = new Image("Photo 1");
-        ImageViewer imageViewer = new ImageViewer(image1);
-
-        imageViewer.apply(image1);
+        Image image = new Image("Photo 1");
+        ImageView imageView  = new ImageView(image);
+        imageView.proceedFilter(new VividFilter(image));
 
         Caramel caramel = new Caramel();
 
         CaramelAdapter caramelAdapter = new CaramelAdapter(caramel);
 
-        caramelAdapter.apply(image1);
-
-
+        imageView.proceedFilter(caramelAdapter);
     }
 }
